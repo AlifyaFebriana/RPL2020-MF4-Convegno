@@ -58,6 +58,11 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
+              backgroundImage: new NetworkImage(
+        new Container()
+
+
+
       drawer: new Drawer(
           child: new ListView(
         children: <Widget>[
@@ -65,7 +70,6 @@ class _HomeState extends State<Home> {
             accountName: new Text("Bastian Rizki"),
             accountEmail: new Text("bastian112@gmail.com"),
             currentAccountPicture: new CircleAvatar(
-              backgroundImage: new NetworkImage(
                   "https://c.pxhere.com/images/0d/18/4fa31701d2cfa087836d807967f3-1447663.jpg!d"),
             ),
             decoration: new BoxDecoration(
@@ -87,7 +91,8 @@ class _HomeState extends State<Home> {
             trailing: new Icon(Icons.logout),
           ),
         ],
-      )),
+      )
+      ),
     );
   }
 }
